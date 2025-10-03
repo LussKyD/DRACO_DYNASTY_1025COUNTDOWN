@@ -7,11 +7,11 @@ A beautiful, interactive countdown website for DRACO DYNASTY's event day, featur
 
 ## 🌟 Live Demo
 
-[View Live Site](#) *(Add your InfinityFree URL here after deployment)*
+[View Live Site](#) *(Coming Up)*
 
 ## 📸 Screenshots
 
-*Coming Soon - Add screenshots of your three main sections*
+*Coming Soon*
 
 ## ✨ Features
 
@@ -68,60 +68,18 @@ A beautiful, interactive countdown website for DRACO DYNASTY's event day, featur
 
 3. **Customize your event date**
    - Open the HTML file in your text editor
-   - Find line 483: `const eventDate = new Date('2025-10-26T00:00:00').getTime();`
    - Change the date to your event date
    - Save and refresh your browser
 
 ## 📖 Documentation
 
-- **[SETUP.md](SETUP.md)** - Detailed hosting instructions for GitHub Pages and InfinityFree
+- **[SETUP.md](SETUP.md)** - 
 - **[CUSTOMIZATION.md](CUSTOMIZATION.md)** - Complete guide to customizing colors, content, and features
 - **[TECHNICAL.md](TECHNICAL.md)** - Technical documentation and code architecture
 - **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Common issues and solutions
 - **[DEPLOYMENT.md](DEPLOYMENT.md)** - Step-by-step deployment guide
 
-## 🎨 Customization Quick Guide
-
-### Change Event Date
-```javascript
-// Line 483 in the HTML file
-const eventDate = new Date('2025-10-26T00:00:00').getTime();
-// Format: 'YYYY-MM-DDTHH:MM:SS'
-```
-
-### Change Brand Colors
-```css
-/* Main gradient background - Line 14 */
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
-/* Accent colors - Line 62 */
-background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-```
-
-### Update Company Name
-```html
-<!-- Line 399 - Header logo -->
-<h1 class="logo">DRACO DYNASTY</h1>
-
-<!-- Line 419 - Hero heading can be customized -->
-<h1>Something Amazing is Coming</h1>
-```
-
 See [CUSTOMIZATION.md](CUSTOMIZATION.md) for detailed customization options.
-
-## 🌐 Deployment
-
-### GitHub Pages (Free)
-1. Push your code to GitHub
-2. Go to repository Settings → Pages
-3. Select main branch as source
-4. Your site will be live at `https://yourusername.github.io/repo-name/`
-
-### InfinityFree (Free)
-1. Sign up at [InfinityFree](https://www.infinityfree.net/)
-2. Create a new account
-3. Upload files via File Manager or FTP
-4. Access via your assigned subdomain
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 
@@ -172,10 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**DRACO DYNASTY**
-- Website: [Your Website]
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+**DRACO DYNASTY - DRACOiNC**
 
 ## 🙏 Acknowledgments
 
@@ -186,8 +141,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 If you have questions or need help:
-- 📧 Email: support@dracodynasty.com
-- 💬 [Open an issue](https://github.com/yourusername/repo-name/issues)
+- 📧 Email: dracodynasty.worldwide@gmail.com
 - 📖 Check the [documentation files](#-documentation)
 
 ## 🗺️ Roadmap
