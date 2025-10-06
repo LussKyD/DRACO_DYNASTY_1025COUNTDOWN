@@ -16,7 +16,7 @@ with **functional interactivity** (countdown, registration, and access modules).
 ## 📂 Project Structure
 
 ```
-DRACO_DYNASTY_1025COUNTDOWN_ORIGINAL_MODULAR/
+DRACO_DYNASTY_1025COUNTDOWN/
 ├── index.html
 ├── assets/
 │   ├── css/
