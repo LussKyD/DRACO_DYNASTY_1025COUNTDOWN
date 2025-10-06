@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRACO DYNASTY Event Day - Coming Soon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <header>
+        <div class="container">
+            <h1 class="logo">DRACO DYNASTY</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Countdown Section -->
+        <section id="countdown-section" class="hero">
+            <div class="hero-content">
+                <h1>Something Amazing is Coming</h1>
+                <p>Get ready for DRACO DYNASTYS' event of the year. Fashion meets media and tech in an extraordinary experience.</p>
+                
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+
+                <div class="event-details">
+                    <h3>What to Expect</h3>
+                    <p>Join us for our Event Day featuring our Tech, fashion and media departments with cutting-edge designs and our innovative media platform where creativity knows no bounds.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="registration-section" class="hero hidden">
+            <div class="hero-content">
+                <h1>Welcome to Event Day!</h1>
+                <p>Register now to get access</p>
+                
+                <form class="registration-form" id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <button type="submit" class="btn">Get Access Now</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Access Section -->
+        <section id="access-section" class="hero hidden">
+            <div class="hero-content">
+                <h1>Welcome, <span id="userName">User</span>!</h1>
+                <p>Thank you for registering! You now have access. Choose where you'd like to start your journey.</p>
+                
+                <div class="access-links">
+                    <div class="department-card">
+                        <i class="fas fa-tshirt department-icon" style="color: #ff6b6b;"></i>
+                        <h3>Fashion Department</h3>
+                        <p>Discover our collection of innovative fashion pieces and trendsetting designs.</p>
+                        <a href="#" class="btn" onclick="accessFashionDept()">Shop Fashion</a>
+                    </div>
+                    
+                    <div class="department-card">
+                        <i class="fas fa-camera-retro department-icon" style="color: #4ecdc4;"></i>
+                        <h3>Media Department</h3>
+                        <p>Photos and videos, connect with creators, and be part of our community.</p>
+                        <a href="#" class="btn btn-secondary" onclick="accessMediaDept()">Upload Media</a>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <button class="btn" onclick="logout()" style="background: rgba(255,255,255,0.2); color: white;">Logout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DRACO DYNASTY. All rights reserved. | Daring Reality and Creating Opportunities.</p>
+        </div>
+    </footer>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
