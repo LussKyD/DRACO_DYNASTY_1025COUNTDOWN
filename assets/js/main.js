@@ -1,5 +1,5 @@
-// Event date 
-        const eventDate = new Date('2025-10-06T00:00:00').getTime();
+// Set your event date here (Year, Month-1, Day, Hour, Minute, Second)
+        const eventDate = new Date('2025-10-26T00:00:00').getTime();
         
         // For testing purposes, you can set a closer date:
         // const eventDate = new Date(Date.now() + 60000).getTime(); // 1 minute from now
@@ -97,7 +97,7 @@
                 return;
             }
 
-            // Save user data (in a live mode, this would be sent to a server)
+            // Save user data (in a real app, this would be sent to a server)
             saveUserData(formData);
             isRegistered = true;
             
@@ -119,13 +119,13 @@
 
         function saveUserData(data) {
             const userData = JSON.stringify(data);
-            // In a live mode, you would send this to your server
+            // In a real application, you would send this to your server
             // For demo purposes, we'll use a variable (since localStorage is not available)
             window.currentUser = data;
         }
 
         function loadUserData() {
-            // In a live mode, you would check if user is already registered
+            // In a real application, you would check if user is already registered
             // For demo purposes, we'll check a variable
             if (window.currentUser) {
                 isRegistered = true;
@@ -146,7 +146,7 @@
         // Department access functions
         function accessFashionDept() {
             showNotification('Redirecting to Fashion Department...', 'success');
-            // In a live mode, redirect to fashion e-commerce site
+            // In a real app, redirect to fashion e-commerce site
             setTimeout(() => {
                 window.open('https://example-fashion-store.com', '_blank');
             }, 1000);
@@ -154,7 +154,7 @@
 
         function accessMediaDept() {
             showNotification('Redirecting to Media Department...', 'success');
-            // In a live mode, redirect to media platform
+            // In a real app, redirect to media platform
             setTimeout(() => {
                 window.open('https://example-media-platform.com', '_blank');
             }, 1000);
@@ -200,3 +200,18 @@
             particlesContainer.innerHTML = '';
             createParticles();
         });
+
+// --- navigation helper appended below ---
+
+
+function navigateTo(url) {
+  document.body.classList.add('fade-out');
+  setTimeout(() => { window.location.href = url; }, 300);
+}
+try {
+  window.accessFashionDept = function(){ navigateTo('assets/pages/fashion.html'); };
+  window.accessMediaDept = function(){ navigateTo('assets/pages/media.html'); };
+} catch(e) {
+  function accessFashionDept(){ navigateTo('assets/pages/fashion.html'); }
+  function accessMediaDept(){ navigateTo('assets/pages/media.html'); }
+}
