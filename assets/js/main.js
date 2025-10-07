@@ -1,5 +1,5 @@
 // Event date 
-        const eventDate = new Date('2025-10-26T00:00:00').getTime();
+        const eventDate = new Date('2025-10-06T00:00:00').getTime();
         
         // For testing purposes, you can set a closer date:
         // const eventDate = new Date(Date.now() + 60000).getTime(); // 1 minute from now
